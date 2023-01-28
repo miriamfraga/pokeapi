@@ -1,0 +1,190 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Rubik Vinyl', cursive;
+    color: rgb(41, 39, 39);
+    margin: 0;
+  }
+
+  /*tengo que activar la función modo nocturno para que cuando GODREAM SEA PULSADO SE PONGA TODO EN MODO OSCURO*/
+  /* y en el modo nocturno el hover de cada carta tiene que ser si nubes y celeste, tiene que se de noche. Y los colores de los pokemons,
+  los tipos, id y habilidades hay que ajustarlos*/
+  .night{
+    background-image: url(./assets/galaxy.jpeg);
+    background-size: contain;
+    color: white;
+  }
+  .container {
+    padding: 40px;
+    margin: 0 auto;
+  }
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 58px;
+  }
+
+  .pokemon-id{
+  color: rgb(226, 85, 85);
+  }
+
+  .card:hover{
+
+    animation: bounce 0.5s linear;
+     background-image: url('./assets/clouds.webp');
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+    }
+    #refresh{
+
+        background-color: rgb(243, 132, 132);
+        size-adjust: 100px;
+        border-radius: 20px;
+        border: 4px solid #363635;
+        display: flex;
+        padding: 3px;
+        font-size: medium;
+        color: black;
+        padding: 4px;
+        font-family: 'Rubik Vinyl', cursive;
+
+      }
+
+  #push-me{
+        background-color: rgb(255, 255, 255);
+        size-adjust: 100px;
+        border-radius: 20px;
+        border: 4px solid #363635;
+        display: flex;
+        padding: 3px;
+        font-size: medium;
+        color: black;
+        padding: 4px;
+        font-family: 'Rubik Vinyl', cursive;
+
+      }
+  #push-me:hover{
+        border-color: #1c1c1b;
+        background-color: rgb(243, 132, 132);
+      }
+  #dream{
+        background-color: rgb(255, 255, 255);
+        size-adjust: 80px;
+        border-radius: 20px;
+        border: 4px solid #363635;
+        display: flex;
+        padding: 3px;
+        font-size:small;
+        color: black;
+        padding: 4px;
+        font-family: 'Rubik Vinyl', cursive;
+        margin-top: 3px;
+
+      }
+  #dream:hover{
+        background-color: rgb(243, 132, 132);
+
+      }
+  .pokemon-image{
+    align-content: center;
+  }
+  .contents{
+    display :contents;
+
+  }
+  .pokemon-ability{
+    font-size: small;
+    color:#ebebe6;
+  }
+  .pokemon-ability:hover{
+    color:#161615;
+  }
+  .card {
+    list-style: none;
+    padding: 40px;
+    background-color: #303030;
+    color: rgb(12, 14, 14);
+    border-radius: 100px;
+  }
+  .card:hover {
+    animation: bounce 0.5s linear;
+  }
+  .pokeBola {
+    list-style: none;
+    padding: 40px;
+    color: rgb(12, 14, 14);
+    border-radius: 100%;
+    background-image: url(./assets/pokeball.png);
+    background-size:120% ;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .pokemon-image:hover{
+    transform: rotateY(-180deg);
+     }
+
+  .pokemon-image1:hover{
+    transform: rotateY(-180deg);
+     }
+  #pokedex {
+    padding-inline-start: 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    text-align: center;
+    grid-gap: 20px;
+  }
+
+  @keyframes bounce {
+    20% {
+      transform: translateY(-2px);
+    }
+    40% {
+      transform: translateY(0px);
+    }
+    60% {
+      transform: translateY(-2px);
+    }
+    80% {
+      transform: translateY(-0px);
+    }
+  }
+  .wrapper{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+
+  }
+  .pokemon-type{
+    font-size: 15px;
+    text-align: center;
+    /* height: 50px; */
+    border-radius: 3px;
+    justify-content: center;
+    color: rgb(241, 232, 232);
+   }
+   .pokemon-type:hover{
+    color: rgb(18, 17, 17);
+
+   }
+   .poke-name{
+    color: rgb(228, 214, 214);
+   }
+   .poke-name:hover{
+    color: rgb(11, 11, 11);
+
+   }
+   .searcher{
+    display: flex;
+    justify-content: center;
+    border-radius: 100px;
+    border-width: 5px;
+    color: #050505;
+    padding: 15px;
+    margin-bottom: 6px;
+    box-shadow:black 1cm;
+    font-family: 'Rubik Vinyl', cursive;
+  }
+  .searcher:hover{
+    background-color: #ebebe6;
+  }
